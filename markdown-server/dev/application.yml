@@ -1,0 +1,8 @@
+info:
+  profile: dev
+
+port:
+  webapp: 9900
+  erueka: 9901
+  config: 9902
+  
