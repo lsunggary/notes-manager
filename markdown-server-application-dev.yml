@@ -6,4 +6,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://106.13.230.143:9901/eureka/
-
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    registryFetchIntervalSeconds: 5
+ribbon:
+  ServerListRefreshInterval: 5000
