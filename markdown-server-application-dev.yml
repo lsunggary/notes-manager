@@ -5,4 +5,8 @@ port:
   webapp: 9900
   erueka: 9901
   config: 9902
-  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://106.13.230.143:9901/eureka/
+
