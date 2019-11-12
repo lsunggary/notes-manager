@@ -1,10 +1,7 @@
 info:
   profile: dev
-
-port:
-  webapp: 9900
-  erueka: 9901
-  config: 9902
+server:
+  port: 9903
 eureka:
   client:
     service-url:
