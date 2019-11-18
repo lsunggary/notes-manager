@@ -30,4 +30,6 @@ spring:
       validation-query: SELECT 'x' #测试连接
 mybatis:
   mapper-locations: classpath*:/mapper/*Mapper.xml
-  
+management:
+  security:
+    enabled: false
