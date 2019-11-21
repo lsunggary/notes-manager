@@ -16,7 +16,7 @@ eureka:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource #Druid连接池
-    url: jdbc:mysql://106.13.230.143:3306/user?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true
+    url: jdbc:mysql://106.13.230.143:3306/markdown?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true
     username: root #数据库用户名
     password: 29OZ80am7x7%rgt8 #数据库密码
     driver-class-name: com.mysql.jdbc.Driver #mysql驱动
