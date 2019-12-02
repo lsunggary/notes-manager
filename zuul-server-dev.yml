@@ -17,4 +17,6 @@ zuul:
     user-server:
       path: /user
       serviceId: user-server-application
-
+management:
+  security:
+    enabled: false
