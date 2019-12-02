@@ -1,0 +1,19 @@
+info:
+  profile: dev
+server:
+  port: 9990
+eureka:
+  client:
+    service-url:
+      defaultZone: http://106.13.230.143:9901/eureka/
+    fetch-registry: true
+    registerWithEureka: true
+    registry-fetch-interval-seconds: 8
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 4
+    lease-expiration-duration-in-seconds: 12
+spring:
+  redis:
+    host: 106.13.230.143
+    database: 0
