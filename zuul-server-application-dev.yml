@@ -16,7 +16,7 @@ eureka:
 zuul:
   routes:
     user-server:
-      path: /user
+      path: /user/**
       serviceId: USER-SERVER-APPLICATION
 management:
   security:
