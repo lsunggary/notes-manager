@@ -17,7 +17,7 @@ zuul:
   routes:
     user-server:
       path: /user
-      serviceId: user-server-application
+      serviceId: USER-SERVER-APPLICATION
 management:
   security:
     enabled: false
