@@ -13,7 +13,24 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 4
     lease-expiration-duration-in-seconds: 12
+#数据源配置
 spring:
-  redis:
-    host: 106.13.230.143
-    database: 0
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource #Druid连接池
+    url: jdbc:mysql://106.13.230.143:3306/markdown?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true
+    username: root #数据库用户名
+    password: 29OZ80am7x7%rgt8 #数据库密码
+    driver-class-name: com.mysql.jdbc.Driver #mysql驱动
+    tomcat:
+      initialSize: 10 #初始化连接池大小
+      min-idle: 10 #初始化最小连接池数量
+      max-active: 100 #初始化最大连接池数量
+      max-wait: 6000 #配置获取连接等待超时的时间
+      time-between-eviction-runs-millis: 6000 #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      min-evictable-idle-time-millis: 30000 #配置一个连接在池中最小生存的时间，单位是毫秒
+      validation-query: SELECT 'x' #测试连接
+mybatis:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+management:
+  security:
+    enabled: false
