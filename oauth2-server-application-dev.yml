@@ -31,10 +31,8 @@ spring:
       validation-query: SELECT 'x' #测试连接
   security:
     user:
-      # 账号
-      name: root
-      # 密码
-      password: 123456
+      name: root # 账号
+      password: 123456 # 密码
 mybatis:
   mapper-locations: classpath*:/mapper/*Mapper.xml
 management:
